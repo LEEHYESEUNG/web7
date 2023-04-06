@@ -8,7 +8,6 @@ $(function(){
  * @author 
  * @pram
  */
-
 let visualw = gsap.matchMedia();
 
 visualw.add({
@@ -31,18 +30,20 @@ visualw.add({
     .addLabel('a')
     .to('.logo',{opacity:1, duration: 1},'a')
     .to('.sc-visual .item',{ yPercent: -100, stagger: 0.1},'a+=1')
-    .to('.sc-visual .title',{ color:"#fff"},'a+=1.5')
-    .to('.link-logo path',{fill:"#fff"},'a+=1.5')
-    .to('.link-logo',{"margin-left":"24px"},'a+=1.5')
     .to('.link-logo',{
-        "grid-column":1
-    },'a+=1.5')
+        "margin-left":"24px",
+        "grid-column":1, 
+        delay: 0.3, transition: 0.5,
+    },'a+=1.5' )
     .to('.sc-visual .title',{
-        "grid-column-start" : Max ? 3 : 5
+        "grid-column-start" : Max ? 3 : 5, 
+        delay: 0.3, transition: 0.5,
     },'a+=1.5')
-    .to('.sc-visual .btn-more',{opacity:1, visibility:"visible"},'a+=1.7')
-    .to('.white-dimmed',{ height: 0, duration:1},'a+=1.7')
+    .to('.white-dimmed',{ height: 0, duration:1},'a+=1.8')
+    .to('.link-logo path',{fill:"#fff"},'a+=2')
+    .to('.sc-visual .title',{color:"#fff", },'a+=2')
     .to('.header-flex',{opacity:1},'a+=2')
+    .to('.sc-visual .btn-more',{opacity:1, visibility:"visible"},'a+=2.32')
 });
 
 
@@ -57,28 +58,30 @@ visualw.add({
  * @author 
  * @pram
  */
-// stagger 안됨
-$('[data-img]').each(function(i,el){
+// stagger 안됨 (-> 각 영역에 img-box에 이벤트 걸기)
+// $('[data-img]').each(function(i,el){
 
-    gsap.from(el,{
-        scrollTrigger:{
-            trigger:el,
-            start:"top 80%",
-            // markers:true,
-        },
-        opacity:0,
-        yPercent:30,
-        stagger:0.1,
-    })
-});
+//     gsap.from(el,{
+//         scrollTrigger:{
+//             trigger:el,
+//             start:"top 80%",
+//             // markers:true,
+//         },
+//         opacity:0,
+//         yPercent:30,
+//         stagger: 0.1,
 
+//     })
+// });
+
+    
 $('.prd-area .img-box').mouseover(function(){
     $(this).find('.over').addClass('on');
 });
 $('.prd-area .img-box').mouseout(function(){
     $(this).find('.over').removeClass('on');
 });
-
+    
 
 
 
@@ -107,7 +110,7 @@ $(window).scroll(function(){
 
 /**
  * 
- * header gnb 영역
+ * header-flex 영역
  * @version 1.0.0
  * @since 
  * @author 
@@ -148,7 +151,7 @@ $('.bg-click').click(function(){
 
 /**
  * 
- * header gnb menu
+ * header flex menu
  * @version 1.0.0
  * @since 
  * @author 
@@ -168,7 +171,6 @@ $('.btn-search').click(function(e){
 
     $('.input-text').val('');
 });
-
 
 let menuOpen = gsap.matchMedia();
 menuOpen.add({
@@ -219,6 +221,7 @@ gsap.from ('.sc-shopall .desc', {
     opacity:0,
     yPercent:30,
 })
+    
 gsap.from ('.sc-shopall .btn-more', {
     scrollTrigger:{
         trigger:".sc-shopall .btn-more",
@@ -230,7 +233,28 @@ gsap.from ('.sc-shopall .btn-more', {
 }); 
 
 
-
+    
+/**
+ * 
+ * sc-shopall
+ * @version 1.0.0
+ * @since 
+ * @author 
+ * @pram
+ */
+gsap.from('.sc-shopall .prd-area .prd-box',{
+    scrollTrigger:{
+        trigger: '.sc-shopall .prd-area',
+        start: "top 80%"
+    },
+    opacity:0,
+    yPercent:30,
+    stagger:0.1
+});    
+    
+    
+    
+    
 
 /**
  * 
@@ -310,6 +334,15 @@ jute
     yPercent:30,
 },'b+=0.4'); 
 
+gsap.from('.sc-Jute .prd-area .prd-box',{
+    scrollTrigger:{
+        trigger: '.sc-Jute .prd-area',
+        start: "top 80%"
+    },
+    opacity:0,
+    yPercent:30,
+    stagger:0.1
+})
 
 
 
@@ -339,8 +372,19 @@ jute
      yPercent:30,
  },'c+=0.2')
  
+  gsap.from('.sc-journal .prd-area .prd-box',{
+    scrollTrigger:{
+        trigger: '.sc-journal .prd-area',
+        start: "top 80%"
+    },
+    opacity:0,
+    yPercent:30,
+    stagger:0.1
+});
 
 
+    
+    
 /**
  * 
  * sc-about
@@ -417,12 +461,10 @@ gsap.to('.sc-about img',{
         yPercent: 30
     },'a+=0.8')
 
-
     $('.footer-util-area .btn-size').click(function(e){
         e.preventDefault(); 
         $(this).addClass('active').siblings().removeClass('active');
     });
-
 
     $(window).scroll(function(){
         contact = $(this).scrollTop();

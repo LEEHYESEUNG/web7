@@ -129,12 +129,11 @@
     .title{
         display: block;
         overflow: hidden;
-        
         .item{
             display: block;
             transform: translateY(100%);
             transform: rotate(3deg);
-            transform-origin: -75%;
+            transform-origin: -150%;
             transition: rotate 0.2s ease-in;
         }
     }

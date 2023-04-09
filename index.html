@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armadillo</title>
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="./asset/js/jquery-3.6.1.min.js"></script>
+    <script src="./asset/js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="logo">
+                <a href="" class="link-logo" aria-label="armadillo">
+                    <svg viewBox="0 0 160 21" fill="none" class="go1733456106" id="logo" style="transform: translate(0px, 0px);"><path d="M72.984 3.39l4.787 9.26H68.59l4.395-9.26zm.471-2.433l-9.103 19.305h.706l3.217-6.906h9.967l3.532 6.906h2.825L74.554.957h-1.099zM59.487.957L52.659 17.28 44.105.957h-1.883v19.305h.706V4.096l8.397 16.166h.785l7.298-17.579v17.58h2.512V.956h-2.433zM110.654.957h-2.433v19.305h2.433V.957zM114.655.957v19.305h10.83v-.706h-8.318V.956h-2.512zM128.703.957v19.305h10.752v-.706h-8.241V.956h-2.511zM100.923 15.24c-1.334 2.668-3.453 4.237-6.436 4.316h-4.865V1.663h4.865c2.983.078 5.102 1.648 6.436 4.316.784 1.491 1.02 3.06 1.02 4.63 0 1.57-.236 3.14-1.02 4.63zm-.942-12.714c-1.57-1.02-3.218-1.491-5.101-1.57h-7.612v19.306h7.612c1.805 0 3.531-.55 5.101-1.57 3.139-2.04 4.63-4.865 4.63-8.083 0-3.296-1.491-6.042-4.63-8.083zM157.583 12.728c-.314 3.061-1.883 5.18-4.395 6.2-2.825 1.02-5.415.236-7.533-1.726-1.256-1.1-2.041-2.512-2.59-4.003-.55-1.49-.863-3.06-.707-4.708.314-2.904 1.727-5.18 4.552-6.279 0 0 3.767-1.57 7.377 1.805 1.177 1.1 2.041 2.512 2.59 4.003.628 1.49.942 3.06.706 4.708zm1.805-5.65c-1.099-3.06-3.531-5.18-7.22-5.964-5.336-1.177-8.946 2.276-10.045 3.767-2.197 2.982-2.668 6.2-1.491 9.26 1.099 3.06 3.453 5.18 7.22 5.964 1.413.314 6.043 1.177 10.124-3.767 2.04-2.59 2.589-6.2 1.412-9.26zM25.662 11.944V1.664h5.415c1.805.078 3.06.784 3.846 2.353.47.864.627 1.805.627 2.826 0 .941-.156 1.883-.627 2.825-.785 1.57-2.12 2.276-3.924 2.354-.393-.078-5.337-.078-5.337-.078zm9.025 1.412c-.47-.314-1.02-.549-1.57-.784.786-.157 1.57-.393 2.277-.864 1.883-1.255 2.825-2.903 2.825-4.944 0-1.962-.942-3.688-2.825-4.944a5.41 5.41 0 00-3.061-.942H23.23v19.306h2.51V12.65h3.454c2.903.079 4.865 1.648 6.2 4.238.549 1.098.784 2.197.941 3.374h2.512c-.314-2.746-1.57-5.1-4.16-6.906zM8.711 3.39l4.787 9.26H4.316l4.395-9.26zM9.103.956L0 20.262h.706l3.218-6.906h9.966l3.532 6.906h2.825L10.202.957H9.103z" fill="currentColor"></path></svg>
+                </a>
+            </h1>
+            <div class="header-flex">
+                <div class="header-area">
+                    <a href="" class="shop-all" data-under1="">
+                        <p class="title">SHOP ALL</p>
+                        <p class="min-title">SHOP</p>
+                    </a>
+                    <div class="util-area">
+                        <a href="" class="link-util wish" data-under1="">
+                            <p class="link-title">WISHLIST</p>
+                        </a>
+                        <a href="" class="link-util search" data-under1="">
+                            <p class="link-title">SEARCH</p>
+                            <div class="icon-box"><svg width="14" height="14" fill="none"><path d="M6 10a4 4 0 100-8 4 4 0 000 8z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.25 12.25L9 9" stroke="#000" stroke-linecap="square" stroke-linejoin="round"></path></svg></div>
+                        </a>
+                        <a href="" class="link-util cart" data-under1="">
+                            <p class="link-title">CART</p>
+                            <div class="icon-box">
+                                <svg width="14" height="14" fill="none"><path d="M3.5 1.167L1.75 3.5v8.166a1.167 1.167 0 001.167 1.167h8.166a1.167 1.167 0 001.167-1.167V3.5L10.5 1.167h-7zM1.75 3.5h10.5" stroke="#000" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9.334 5.833a2.333 2.333 0 11-4.667 0" stroke="#000" stroke-width="0.9" stroke-linecap="square" stroke-linejoin="round"></path></svg>
+                            </div>
+                        </a>
+                        <a href="" class="menu-area">
+                            <span class="blind">메뉴열기</span>
+                            <span class="bar bar-up"></span>
+                            <span class="bar bar-down"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="gradient"></div>
+            <div class="menu-open">
+                <section class="open-sc">
+                    <div class="title-area">
+                        <h3 class="title">Our Collection</h3>
+                        <span class="sub-title">OUR COLLECTIONS</span>
+                        <div class="sub-menu-area">
+                            <span class="menu">Shop All</span>
+                            <span class="menu">Shop In Stock</span>
+                            <span class="menu">Browse by Collection</span>
+                            <span class="menu">Nook</span>
+                            <span class="menu">Runners</span>
+                            <span class="menu">Samlpes</span>
+                            <span class="menu">Sale</span>
+                        </div>
+                    </div>
+                    <div class="img-area">
+                        <img src="https://cdn.sanity.io/images/api3knx1/production/0e7173afddc2281cd99aaa4aae9b6378f27e2b92-5760x3008.jpg/Agra-Midnight.jpg?bg=F0EEE9&w=1920&auto=format" alt="">
+                    </div>
+                </section>
+                <section class="open-sc">
+                    <div class="title-area">
+                        <h3 class="title">Our rugs lie lightly on this earth</h3>
+                        <span class="sub-title">ABOUT</span>
+                    </div>
+                    <div class="text-area">
+                        <p class="text">
+                            We’re here to make a difference. Not only in the sanctuary of the home, but in the world around us. We hope to inspire a more natural pace of life with products that are gentle to the senses and kinder to the environment. As the first Australian and American rug maker to achieve B Corp status, we practise ethical living in all we do.
+                        </p>
+                    </div>
+                    <div class="img-area">
+                        <img src="https://cdn.sanity.io/images/api3knx1/production/a9e9851cb4bf6f97f7d4e0bd08168754b480d0fc-5760x3008.jpg/ARM-about-banner-BCORP.jpg?bg=F0EEE9&w=1920&auto=format" alt="open-ABOUT">
+                    </div>
+                </section>
+                <section class="open-sc">
+                    <div class="title-area">
+                        <h3 class="title">Journal</h3>
+                        <span class="sub-title">JOURNAL</span>
+                    </div>
+                    <div class="text-area">
+                        <p class="text">
+                            The Armadillo Journal is home to stories and conversations covering Places, People, and Purpose. You'll find features on people who inspire us, places and projects that delight us, explorations of ideas that ignite us, and rich reads for all those who journey with us.
+                        </p>
+                    </div>
+                    <div class="img-area">
+                        <img src="https://cdn.sanity.io/images/api3knx1/production/63342ead919fd5780a74eca68273efa8af47d640-2560x1600.jpg/playlist-home-reimagined.jpg?rect=342,0,1877,1600&bg=F0EEE9&w=1920&h=1637&fit=min&auto=format" alt="open-Journal">
+                        <img src="https://cdn.sanity.io/images/api3knx1/production/6ec1a77bd810a8f0f4bf9daeaf0a29f9305677ee-2560x1600.jpg/DSCF1916-header.jpg?rect=585,0,1389,1600&bg=F0EEE9&w=1920&h=2211&fit=min&auto=format" alt="open-Journal">
+                        <img src="https://cdn.sanity.io/images/api3knx1/production/4e3bf2629850d59a76ba394b4f611e73a76c2473-2560x1600.jpg/Kaye_9353_HR---FEATURE-IMAGE.jpg?rect=725,0,1110,1600&bg=F0EEE9&w=1920&h=2768&fit=min&auto=format" alt="open-Journal">
+                    </div>
+                </section>
+                <section class="open-sc">
+                    <div class="right-section">
+                        <div class="title-area">
+                            <h3 class="title">Exclusive services for trade</h3>
+                            <span class="sub-title">TRADE</span>
+                        </div>
+                        <div class="sub-menu-area">
+                            <span class="menu">Join program</span>
+                            <span class="menu">Custom colour</span>
+                            <span class="menu">Book showroom</span>
+                        </div>
+                        <div class="text-area">
+                            <p class="text">
+                                Armadillo welcomes interior architects, designers, and decorators to become part of our trade program. Trade clients receive a dedicated account manager, access to our custom product programs, the ability to book our showroom for client meetings, along with preferential trade pricing. The Armadillo Trade program is open to approved trade professionals only.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="left-section">
+                        <div class="img-area">
+                            <img src="https://cdn.sanity.io/images/api3knx1/production/645b0cbde95e3bff66b6527e3e8dd4e80ea08634-1344x1983.png/trade-hero.png?rect=0,31,1344,1920&bg=F0EEE9&w=1280&h=1829&fit=min&auto=format" alt="open-TRADE">
+                        </div>
+                    </div>
+                </section>
+                <section class="open-sc">
+                    <div class="title-area">
+                        <h3 class="title">From creative concept to interior application, we will help you find the perfect rug for your space.</h3>
+                        <span class="sub-title">CONTACT</span>
+                    </div>
+                    <div class="img-area">
+                        <img src="https://cdn.sanity.io/images/api3knx1/production/e57aba49bf60b82535e350f4031be09dcb63654b-1733x1300.jpg/Contact-3.jpg?bg=F0EEE9&w=1600&auto=format" alt="open-CONTACT">
+                        <img src="https://cdn.sanity.io/images/api3knx1/production/afd9c1cf0e10bd51349ec98297fef7d256c58303-1733x1300.jpg/Contact-5.jpg?bg=F0EEE9&w=1600&auto=format" alt="open-CONTACT">
+                    </div>
+                    <div class="text-area">
+                        <p class="text">
+                            Armadillo welcomes interior architects, designers, and decorators to become part of our trade program. Trade clients receive a dedicated account manager, access to our custom product programs, the ability to book our showroom for client meetings, along with preferential trade pricing. The Armadillo Trade program is open to approved trade professionals only.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="util-area-open">
+                <div class="wish-open">
+                    <div class="text-box">
+                        <strong class="text">Your Wishlist is empty</strong>
+                        <a href="" class="open-btn-more">shop all</a>
+                    </div>
+                    <div class="arrow-box">
+                        <svg width="21" height="14" fill="none" class="go54497146 arrow" style="opacity: 1; transform: translate(0px, -7.2px);"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.333 7.379l5.08 5.08-.708.706-5.579-5.579-.353-.353-.354-.354.354-.353.353-.354L7.3 0l.707.707L2.334 6.38H21v1H2.333z" fill="currentColor"></path></svg>
+                    </div>
+                </div>
+                <div class="search-open">
+                    <div class="search-box">
+                        <form action="" method="get">
+                            <fieldset>
+                                <legend class="blind">검색</legend>
+                                <input type="text" class="input-text" placeholder="Search">
+                                <button class="btn-search">CLEAR</button>
+                            </fieldset>
+                        </form>
+                        <span class="text">RECENT SEARCH TERMS</span>
+                    </div>
+                    <div class="arrow-box">
+                        <svg width="21" height="14" fill="none" class="go54497146 arrow" style="opacity: 1; transform: translate(0px, -7.2px);"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.333 7.379l5.08 5.08-.708.706-5.579-5.579-.353-.353-.354-.354.354-.353.353-.354L7.3 0l.707.707L2.334 6.38H21v1H2.333z" fill="currentColor"></path></svg>
+                    </div>
+                </div>
+                <div class="cart-open">
+                    <div class="text-box">
+                        <p class="text">Your Cart is empty</p>
+                        <a href="" class="open-btn-more">shop all</a>
+                    </div>
+                    <div class="arrow-box">
+                        <svg width="21" height="14" fill="none" class="go54497146 arrow" style="opacity: 1; transform: translate(0px, -7.2px);"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.333 7.379l5.08 5.08-.708.706-5.579-5.579-.353-.353-.354-.354.354-.353.353-.354L7.3 0l.707.707L2.334 6.38H21v1H2.333z" fill="currentColor"></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-click"></div>
+            <div class="dimmed"></div>
+        </header>
+        <main class="main">
+            <section class="sc-visual">
+                <div class="white-dimmed"></div>
+                <h2 class="blind">메인 비주얼</h2>
+                <img src="https://cdn.sanity.io/images/api3knx1/production/c8d2c5cf8dba84ab9b304567c7cb6d8eaca31e7b-5760x3008.jpg/Armadillo_22_MOJAVE_NATURAL_WIDE_212140_v2.jpg?bg=F0EEE9&w=1920&auto=format" alt="메인 비주얼">
+                <div class="title-area">
+                    <div class="title">
+                        <span class="item">Jute Redefined</span>
+                        <div class="btn-area">
+                            <a href="" class="btn-more-pass">shop mojave
+                                <span class="bar"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="flex-group">
+                <h2 class="blind">shopall&product</h2>
+                <section class="sc-shopall">
+                    <h3 class="blind">shopall menu</h3>
+                    <div class="text-area">
+                        <p class="desc">
+                            Introducing Mojave; our masterwork in jute. Inspired by ephemeral desert landscapes, Mojave is made with an Indo Nepali hand-knotted Tibetan weave and a meticulously handspun pile that endows each piece with a uniquely variegated finish. Available in three exquisite colour variations; Mojave pairs seamlessly back with our wider range and introduces a refined touch of nature into any home.
+                        </p>
+                        <div class="btn-more-area">
+                            <a href="" class="btn-more" role="button" data-hover="">
+                                Shop All
+                            </a>
+                        </div>
+                    </div>
+                    <div class="prd-area">
+                        <a href="" class="prd-box">
+                            <div class="img-box">
+                                <img src="https://cdn.sanity.io/images/api3knx1/production/37689620882903e471cab0c51d495846171d91f1-1300x1733.jpg/Armadillo_22_MOJAVE_CASHEW_MID45_211987.jpg?rect=1,0,1297,1733&bg=F0EEE9&w=640&h=855&fit=min&auto=format" alt="Cashew" class="original">
+                                <img src="https://cdn.sanity.io/images/api3knx1/production/181db73fcb9acc1c1d03461c889cdcec0568cec4-1300x1734.png/ARM-COLLECTION-MOJAVE-CASHEW-CORNER.png?rect=1,0,1298,1734&w=640&h=855&fit=min&auto=format" alt="Cashew" class="over">
+                            </div>
+                            <div class="text-box">
+                                <div class="desc-box">
+                                    <span class="collection">heirloom collection</span>
+                                    <span class="price">from $1,900</span>
+                                    <span class="sizes">4 sizes</span>
+                                    <span class="color">3 colours</span>
+                                </div>
+                                <div class="titel-box">
+                                    <span class="title">Mojave</span>
+                                    <span class="name">Cashew</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="prd-box">
+                            <div class="img-box">
+                                <img src="https://cdn.sanity.io/images/api3knx1/production/d18ec4ab8eda4d75d4157b03e05845ef74ed16d8-1300x1733.jpg/Armadillo_22_MOJAVE_LAUREL_MID45_211638.jpg?rect=1,0,1297,1733&bg=F0EEE9&w=640&h=855&fit=min&auto=format" alt="Laurel" class="original">
+                                <img src="https://cdn.sanity.io/images/api3knx1/production/e894a8d6980b5c1c2b030acc673dc02c609c6faf-1300x1734.png/ARM-COLLECTION-MOJAVE-LAUREL-CNR.png?rect=1,0,1298,1734&w=640&h=855&fit=min&auto=format" alt="Laurel" class="over">
+                            </div>
+                            <div class="text-box">
+                                <div class="desc-box">
+                                    <span class="collection">heirloom collection</span>
+                                    <span class="price">from $1,900</span>
+                                    <span class="sizes">4 sizes</span>
+                                    <span class="color">3 colours</span>
+                                </div>
+                                <div class="titel-box">
+                                    <span class="title">Mojave</span>
+                                    <span class="name">Laurel</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="prd-box">
+                            <div class="img-box">
+                                <img src="https://cdn.sanity.io/images/api3knx1/production/e270886f65ebf12e1916aad3f5c16e622a1783ed-1300x1733.jpg/Armadillo_22_MOJAVE_NATURAL_OH_212496.jpg?rect=1,0,1297,1733&bg=F0EEE9&w=420&h=561&fit=min&auto=format" alt="Natural" class="original">
+                                <img src="https://cdn.sanity.io/images/api3knx1/production/b1b49b77349214c2808d192deabeaec0e5915da2-1300x1734.png/ARM-COLLECTION-MOJAVE-NATURAL-CNR.png?rect=1,0,1298,1734&w=420&h=561&fit=min&auto=format" alt="Natural" class="over">
+                            </div>
+                            <div class="text-box">
+                                <div class="desc-box">
+                                    <span class="price">from $9,800</span>
+                                    <span class="sizes">3 sizes</span>
+                                    <span class="color">3 colours</span>
+                                </div>
+                                <div class="titel-box">
+                                    <span class="title">Mojave</span>
+                                    <span class="name">Natural</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section class="sc-featured">
+                    <div class="text-area">
+                        <h3 class="sc-title">FEATURED</h3>
+                        <strong class="title">
+                            On Location in Puglia with Joseph Gardner
+                        </strong>
+                        <p class="desc">
+                            For the launch of our beautiful new Mojave collection, we worked with Interior Stylist and Design Consultant Joseph Gardner to bring a very special shoot to life in a lovingly restored Casolare (farmhouse) in Puglia.
+                        </p>
+                        <div class="btn-more-area">
+                            <a href="" class="btn-more" role="button" data-hover="">
+                               Read more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <img src="https://cdn.sanity.io/images/api3knx1/production/d47d07dfa187ac1562a7942b95629502a62c2ee0-1300x1733.jpg/CQ6A2970-Nest-Natural.jpg?bg=F0EEE9&w=640&auto=format" alt="On Location in Puglia with Joseph Gardner">
+                    </div>
+                </section>
+            </section>
+            <section class="sc-Jute">
+                <div class="top-area">
+                    <h2 class="sc-title">Reimagining Jute</h2>
+                    <div class="desc-box">
+                        <p class="desc">
+                            Undone sophistication permeates our jute collection, bringing an effortless elegance and earthiness to our sanctuaries. Our jute range tells the story of innovation and the creative spirit of our artisans, as avant-garde weaving techniques are deftly explored. The result is a luxurious collection that boldly expresses jute’s artistic qualities.
+                        </p>
+                    </div>
+                    <div class="btn-more-area">
+                        <a href="" class="btn-more" role="button" data-hover="">
+                            Jute Rugs
+                        </a>
+                    </div>
+                    <div class="main-prd">
+                        <div class="img-area">
+                            <div class="img-box">
+                                <img src="https://cdn.sanity.io/images/api3knx1/production/8c56c0cc17d3730afb291a14ee5027e239192344-1733x1300.jpg/Armadillo_22_MESA_NATURAL_WIDE_211693.jpg?bg=F0EEE9&w=1280&auto=format" alt="Jute Rugs">
+                            </div>
+                            <div class="circle-area"></div>
+                            <a href="" class="circle-box">
+                                <span class="circle"></span>
+                                <div class="desc-area">
+                                    <ul class="desc-list">
+                                        <li class="desc-item">
+                                            <span class="desc-title">Product</span>
+                                            <span class="desc-content">Mesa</span>
+                                        </li>
+                                        <li class="desc-item">
+                                            <span class="desc-title">Colour</span>
+                                            <span class="desc-content">Natural</span>
+                                        </li>
+                                        <li class="desc-item">
+                                            <span class="desc-title">Price</span>
+                                            <span class="desc-content">From $1,080</span>
+                                        </li>
+                                        <li class="desc-item">
+                                            <span class="desc-title">Collection</span>
+                                            <span class="desc-content">Classic Collection</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prd-area">
+                    <a href="" class="prd-box">
+                        <div class="img-box">
+                            <img src="https://cdn.sanity.io/images/api3knx1/production/a792e700db02b0b14410da66725529cbe007dc55-1300x1733.jpg/Armadillo_22_RIVER_INDIGO_TICKING_WIDE_212918.jpg?rect=1,0,1297,1733&bg=F0EEE9&w=640&h=855&fit=min&auto=format" alt="Natural & Indigo" class="original">
+                            <img src="https://cdn.sanity.io/images/api3knx1/production/cad8fb8af732be6127e75da43b2489f497f65542-1300x1734.png/ARM-CLASSIC-CORNER-RiverTickingStripe-Indigo.png?fp-x=0.5&fp-y=0.5&w=640&h=855&fit=crop&crop=focalpoint&auto=format" alt="Natural & Indigo" class="over">
+                        </div>
+                        <div class="text-box">
+                            <div class="desc-box">
+                                <span class="collection">classic collection</span>
+                                <span class="price">from $1,240</span>
+                                <span class="sizes">4 sizes</span>
+                                <span class="color">3 colours</span>
+                            </div>
+                            <div class="titel-box">
+                                <span class="title">River</span>
+                                <span class="name">Natural & Indigo</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="prd-box">
+                        <div class="img-box">
+                            <img src="https://cdn.sanity.io/images/api3knx1/production/5aa336f8c6e73b1913cdadf1996153ad68f0e266-1300x1733.jpg/Armadillo_22_KALAHARI_PewterCharcoal_MID45_213744.jpg?rect=1,0,1297,1733&bg=F0EEE9&w=640&h=855&fit=min&auto=format" alt="Pewter & Charcoal" class="original">
+                            <img src="https://cdn.sanity.io/images/api3knx1/production/f0a1c56e30aa3d865a7da93e696ba163beecfff0-1300x1734.png/ARM-CLASSIC-CORNER-Kalahari-PewterCharcoal.png?rect=1,0,1298,1734&w=640&h=855&fit=min&auto=format" alt="Pewter & Charcoal" class="over">
+                        </div>
+                        <div class="text-box">
+                            <div class="desc-box">
+                                <span class="collection">classic collection</span>
+                                <span class="price">from $1,240</span>
+                                <span class="sizes">4 sizes</span>
+                                <span class="color">3 colours</span>
+                            </div>
+                            <div class="titel-box">
+                                <span class="title">Kalahari</span>
+                                <span class="name">Pewter & Charcoal</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="prd-box">
+                        <div class="img-box">
+                            <img src="https://cdn.sanity.io/images/api3knx1/production/b2652c52974fa0330e40bdd98807abae4e9a2b16-1300x1733.jpg/Armadillo_22_PETUNIA_NATURAL_MID45_211821.jpg?rect=1,0,1297,1733&bg=F0EEE9&w=420&h=561&fit=min&auto=format" alt="Natural" class="original">
+                            <img src="https://cdn.sanity.io/images/api3knx1/production/784a4f7087169d2646078b16c8d33c30388d904f-1300x1734.png/ARM-CLASSIC-CORNER-Petunia-Natural.png?rect=1,0,1298,1734&w=420&h=561&fit=min&auto=format" alt="Natural" class="over">
+                        </div>
+                        <div class="text-box">
+                            <div class="desc-box">
+                                <span class="price">from $890</span>
+                                <span class="sizes">2 sizes</span>
+                                <span class="color">1 colours</span>
+                            </div>
+                            <div class="titel-box">
+                                <span class="title">Petunia</span>
+                                <span class="name">Natural</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="sc-journal">
+                <div class="text-area">
+                    <h2 class="sc-title">Journal</h2>
+                    <div class="desc-box">
+                        <p class="desc">
+                            A thought-provoking selection of interviews with thought leaders and changemakers and features on inspiring homes and spaces from around the world.
+                        </p>
+                        <div class="btn-more-area">
+                            <a href="" class="btn-more" role="button" data-hover="">
+                                Read Journal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prd-area">
+                    <div class="prd-box">
+                        <div class="img-box"><img src="https://cdn.sanity.io/images/api3knx1/production/6ec1a77bd810a8f0f4bf9daeaf0a29f9305677ee-2560x1600.jpg/DSCF1916-header.jpg?rect=248,0,2065,1600&bg=F0EEE9&w=640&h=496&fit=min&auto=format" alt="A Study in Balance with Charlotte Sylvain" class="original"></div>
+                        <div class="text-box">
+                            <em class="topic">place</em>
+                            <div class="title-box">
+                                <strong class="title">At Home With Photographer Marina Denisova</strong>
+                                <p class="desc">For photographer Marina Denisova taking pictures is both a way of life and a way to make a living; embarking on an ever evolving dance familiar to many creatives that brings her profession and passion together as one. Over the years Marina has created a gently inquisitive body of work spanning portraiture, architecture and design that feels at once intimate and masterfully refined. We spoke with Marina about her career and creative process, as well as her beautiful apartment in Eixample, Barcelona that she shares with her partner Jansen Aui.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prd-box">
+                        <div class="img-box"><img src="https://cdn.sanity.io/images/api3knx1/production/8fea67e920bcab712d50e05f96b74f7d2351a194-2560x1600.jpg/FIONALYNCH-SORRENTO-029-header.jpg?bg=F0EEE9&fp-x=0.5&fp-y=0.8397260273972602&w=640&h=496&fit=crop&crop=focalpoint&auto=format" alt="A Study in Balance with Charlotte Sylvain" class="original"></div>
+                        <div class="text-box">
+                            <em class="topic">place</em>
+                            <div class="title-box">
+                                <p class="title">Sorrento House With Fiona Lynch</p>
+                                <p class="desc">Fiona Lynch’s eye for painterly colour and texture is woven into the core of every project that she takes on. Over almost a decade Fiona’s office has crafted a signature style imbued with a soft minimalism that strikes a pitch perfect balance between the raw and the refined. We had the pleasure of speaking with Fiona about her beautiful ‘Sorrento House’ project, the office’s dedication to sustainability, and how design can be a conduit for collaboration. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prd-box">
+                        <div class="img-box"><img src="https://cdn.sanity.io/images/api3knx1/production/560c49aa2131c2d9fa10d683c5df392de2c62d4f-1300x1733.jpg/ArmadilloSFShowroom_01.jpg?bg=F0EEE9&fp-x=0.5&fp-y=0.7034313725490196&w=420&h=326&fit=crop&crop=focalpoint&auto=format" alt="A Study in Balance with Charlotte Sylvain" class="original"></div>
+                        <div class="text-box">
+                            <em class="topic">place</em>
+                            <div class="title-box">
+                                <p class="title">Introducing Armadillo San Francisco</p>
+                                <p class="desc">We’re excited to announce the opening of our first showroom and retail space in San Francisco. Located at 3695 Sacramento Street in the heart of Presidio Heights, the showroom is at home amongst the neighbourhood’s design-led mix of architecture firms, interior design studios, art galleries, and homewares showrooms. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-about">
+                <img src="https://cdn.sanity.io/images/api3knx1/production/3e9a29a16465bb7127d7de187b7414428d0936cd-5760x3600.png/Armadillo_Rugs_LisbonShoot_Portugal_Collection_2019_02%201.png?bg=F0EEE9&w=3200&auto=format" alt="배경화면" class="bg-img">
+                <div class="text-area">
+                    <h2 class="sc-title">Our rugs lie lightly on this earth.</h2>
+                    <p class="desc">
+                        We’re here to make a difference. Not only in the sanctuary of the home, but in the world around us. We hope to inspire a more natural pace of life with products that are gentle to the senses and kinder to the environment. As the first Australian and American rug maker to achieve B Corp status, we practise ethical living in all we do.
+                    </p>
+                    <a href="" class="btn-more-pass" role="button">
+                        ABOUT ARMADILLO
+                        <i class="bar" ></i>
+                    </a>
+                
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="info-area">
+                <div class="footer-logo">
+                    <span class="blind">아르마딜로</span>
+                    <svg viewBox="0 0 81 93" fill="none" class="go2164225045" style="opacity: 1; transform: translate(0px, 0px);"><path d="M26.08 55.222l10.724-22.678 11.77 22.678H26.08zm14.421-28.655H37.79L15.48 73.71h1.787l7.95-16.762h24.219l8.689 16.762h6.84L40.501 26.567z" fill="#000"></path><path d="M1 91.889V40.802C1 19.85 17.207 2.102 38.16 1.054c22.616-1.17 41.35 16.824 41.35 39.132v51.703H1z" stroke="#000" stroke-miterlimit="10"></path></svg>
+                </div>
+                <div class="btn-sign-more">
+                    <a href="" class="btn-sign" data-hover="">
+                        <span class="desc">Enter your email for styling tips, sneak peeks & special offers delivered to your inbox.</span>
+                        <span class="desc-sign">Sign-up</span>
+                    </a>
+                    <span class="min-desc">Enter your email for styling tips, sneak peeks & special offers delivered to your inbox.</span>
+                    <span class="silde-up"></span>
+                </div>
+                <nav class="info-list-area area1">
+                    <ul class="info-list">
+                        <li class="info-item"> <a href="" class="link-item">Shop</a></li>
+                        <li class="info-item"><a href="" class="link-item">About</a></li>
+                        <li class="info-item"><a href="" class="link-item">B Corp</a></li>
+                        <li class="info-item"><a href="" class="link-item">The Armadillo Foundation</a></li>
+                        <li class="info-item"><a href="" class="link-item">Showrooms + Contact Us</a></li>
+                        <li class="info-item"><a href="" class="link-item">Trade Area</a></li>
+                        <li class="info-item"><a href="" class="link-item">Affiliate</a></li>
+                        <li class="info-item"><a href="" class="link-item">Try at Home Samples</a></li>
+                    </ul>
+                </nav>
+                <nav class="info-list-area area2">
+                    <ul class="info-list">
+                        <li class="info-item"><a href="" class="link-item">Book a Design Consultation</a></li>
+                        <li class="info-item"><a href="" class="link-item">Rug Placement Guide</a></li>
+                        <li class="info-item"><a href="" class="link-item">Care + Maintenance</a></li>
+                        <li class="info-item"><a href="" class="link-item">Delivery + Shipping</a></li>
+                        <li class="info-item"><a href="" class="link-item">FAQ</a></li>
+                        <li class="info-item"><a href="" class="link-item">Stockists</a></li>
+                        <li class="info-item"><a href="" class="link-item">Gift Cards</a></li>
+                        <li class="info-item"><a href="" class="link-item">Careers</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-desc-area">
+                    <p class="text">
+                        Armadillo is the first Australian and American rug brand to become a Certified B Corporation
+                    </p>
+                    <img src="https://cdn.sanity.io/images/api3knx1/production/92a83b93cbedbb61c974d2cecba2cab9a23552fd-422x724.svg" alt="certified">
+                </div>
+                <div class="desc-box">
+                    Armadillo respectfully acknowledges the Traditional Owners and Custodians of the land on which we live and work, and pays respect to their Elders past, present and emerging.
+                </div>
+            </section>
+            <section class="footer-util-area">
+                <h3 class="blind">정책 및 약관</h3>
+                <div class="policy-area">
+                    <a href="" class="link-item" data-under2="">PRIVACY POLICY</a>
+                    <a href="" class="link-item" data-under2="">TERMS AND CONDITIONS</a>
+                </div>
+                <div class="sns-area">
+                    <a href="" class="link-item instar" data-under2="">INSTAGRAM</a>
+                    <a href="" class="link-item facebook" data-under2="">FACEBOOK</a>
+                    <a href="" class="link-item pinter" data-under2="">PINTEREST</a>
+                </div>
+                <div class="set-area">
+                    <div class="size-box">
+                        <span>size:</span>
+                        <a href="" class="btn-size imperial active">IMPERIAL</a>
+                        <a href="" class="btn-size metric">METRIC</a>
+                    </div>
+                    <p class="lang"> CURRENT LOCATION: EN-AU </p>
+                </div>
+            </section>
+            <a href="" class="contact" data-hover="">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 8C12.5 8.39782 12.3595 8.77936 12.1095 9.06066C11.8594 9.34196 11.5203 9.5 11.1667 9.5H5.412C3.98381 9.5 2.62379 10.1107 1.67495 11.1782L0.5 12.5V2C0.5 1.60218 0.640476 1.22064 0.890524 0.93934C1.14057 0.658036 1.47971 0.5 1.83333 0.5H11.1667C11.5203 0.5 11.8594 0.658036 12.1095 0.93934C12.3595 1.22064 12.5 1.60218 12.5 2V8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

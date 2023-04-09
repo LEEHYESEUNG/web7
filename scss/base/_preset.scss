@@ -1,0 +1,119 @@
+body {
+    font-family: "Sohne", "Lucida Sans", Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background: #F9FCF8;
+    &.overflow{
+        overflow: hidden;
+    }
+}
+.blind { position: absolute; overflow: hidden; width: 1px; height: 1px; clip: rect(0 0 0 0); margin: -1px; }
+.prd-box{ z-index: 2; }
+.img-box{ z-index: 2; }
+
+
+// header under-bar 방법
+[data-under1]{
+    position: relative;
+}
+[data-under1]::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 20px;
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    transition: transform 0.3s;
+}
+[data-under1]:hover::before{
+    transform: scaleX(1);
+    transform-origin: 0% 100%;
+}
+
+
+// footer under-bar 방법
+[data-under2]{
+    position: relative;
+}
+[data-under2]::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 0.05em;
+    background: #000;
+}
+[data-under2]:hover::before{
+   width: 100%;
+   transition: 0.3s;
+}
+[data-under2]::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    right: 0;
+    width: 0;
+    height: 0.05em; 
+    background: #000;
+    visibility: hidden;
+    transition: visibility 0.3s 0.5s, width 0.3s 0.5s;
+}
+[data-under2]:hover::after{
+    width: 100%;
+    visibility: visible; 
+}
+
+
+
+
+
+
+// btn 영역
+ [data-hover]{
+    position: relative;
+    transition: 0.3s;
+    z-index: 1;
+ }
+ [data-hover]::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: #566160;
+    transition: 0.3s;
+ }
+ [data-hover]:hover{
+    color: #fff;
+ }
+ [data-hover]:hover::after{
+    height: 100%;
+    z-index: -1;
+ }
+
+ 
+
+
+
+
+
+
+
+
+@media (max-width: 1020px){
+    [data-under1]::after{
+      display: none;
+    }
+    [data-under1]::before{
+      display: none;
+    }
+}

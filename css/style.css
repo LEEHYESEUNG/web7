@@ -1184,9 +1184,9 @@ body.overflow {
 .sc-visual .title .item {
   display: block;
   transform: translateY(100%);
-  transform: rotate(3deg);
-  transform-origin: -150%;
-  transition: rotate 0.2s ease-in;
+  transform: rotate(10deg);
+  transform-origin: -60%;
+  transition: rotate 0.5s ease-out;
 }
 
 .btn-more-pass {

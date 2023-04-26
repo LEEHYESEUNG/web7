@@ -40,7 +40,7 @@ visualw.add({
         delay: 0.2, 
     },'a+=1.5' )
     .to('.sc-visual .title',{
-        "grid-column-start" : Max ? 3 : 5, 
+        "grid-column-start" : Max ? 4 : 5, 
         delay: 0.2, 
     },'a+=1.5')
     .to('.white-dimmed',{ height: 0, duration:1},'a+=1.8')

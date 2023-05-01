@@ -97,7 +97,7 @@ body.overflow {
   overflow: hidden;
   width: 1px;
   height: 1px;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   margin: -1px;
 }
 
@@ -1184,9 +1184,9 @@ body.overflow {
 .sc-visual .title .item {
   display: block;
   transform: translateY(100%);
-  transform: rotate(10deg);
-  transform-origin: -60%;
-  transition: rotate 0.5s ease-out;
+  transform: rotate(5deg);
+  transform-origin: -110%;
+  transition: transform 0.5s ease-out;
 }
 
 .btn-more-pass {

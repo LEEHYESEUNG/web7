@@ -262,8 +262,6 @@
     padding: 80px 24px 80px; 
     .top-area{
         display: grid;
-        grid-column: 24px;
-        grid-row: 0;
         grid-template-columns: repeat(12, minmax(0,1fr));
         margin-bottom: 100px;
     }
